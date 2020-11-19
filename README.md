@@ -2,6 +2,8 @@
 
 ## Description 
 
+This API provides access to essential information for the current year's Folklorama festival. For instance, requests to this API can yield general festival information, such as the start date, as well as individual pavilion information.
+
 ## Endpoints 
 
 #### GET pavilions/
