@@ -6,7 +6,7 @@ This API provides access to essential information for the current year's Folklor
 
 ## Endpoints 
 
-#### GET pavilions/
+#### GET /pavilions/
 Request the list of all pavilions which are open this year or the information for a specific one.  
 
 ##### Parameters
@@ -37,16 +37,33 @@ No parameter:
 }
 ``` 
 
-#### GET availability/ 
+#### GET /availability/ 
 - takes pavilion name as parameter
 - returns the number of tickets left to purchase
 
-#### GET info/
+#### GET /info/
 - returns general info for folklorama
 - start date, end date, number of pavilions
 
-#### GET popular
-- lists the 10 most popular pavilions for the current festival based on number of tickets sold
+#### GET /popular/
+Fetch the current list of the top 10 most popular pavilions for this year's Folklorama.
+
+##### Paramaters
+
+- no parameters
+
+##### Resources
+
+```json
+{
+    "pavilions": [
+        "name1",
+        "name2",
+	...,
+	"name10"
+    ]
+}
+```
 
 ## Examples
 
