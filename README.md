@@ -52,11 +52,11 @@ No parameter:
 
 ### Request
 
-GET availability [African Pavilion]
+GET/availability/African
 
 ### Response
 
-{
+```{
     "page": 1,
     "per_page": 6,
     [
@@ -65,10 +65,8 @@ GET availability [African Pavilion]
             "name": "Africa Pavilion",
             "year": 2019,
             "Location": "Located off St. Mary’s Rd, turn on to Enfield Cr",
-            "ticket left": 30,
-            
-            
-        }
+            "ticket left": 30
+            }
         ],
         "support": {
         "url": "https://https://folklorama.tixit.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC6C4B01-CDD6-41A5-B788-3FA4958624F5",
