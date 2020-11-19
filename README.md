@@ -47,6 +47,10 @@ Request the number of tickets are remaining for a specific pavilion.
 ##### Resources
 ``` json
 {
+    "id": pavilion_id,
+    "name": "pavilion_name"
+    "year": 2021.
+    "Location": "pavilion_Location"
     "tickect left": "10"
 }
 
