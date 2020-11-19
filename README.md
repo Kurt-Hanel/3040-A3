@@ -47,7 +47,7 @@ Request the number of tickets are remaining for a specific pavilion.
 ##### Resources
 ``` json
 {
-    "id": pavilion_id,
+    "id": "pavilion_id",
     "name": "pavilion_name",
     "year": 2021,
     "Location": "pavilion_Location",
@@ -112,7 +112,7 @@ GET/availability/African
     "per_page": 6,
     [
         {
-            "id": 1,
+            "id": "1",
             "name": "Africa Pavilion",
             "year": 2019,
             "Location": "Located off St. Mary’s Rd, turn on to Enfield Cr",
