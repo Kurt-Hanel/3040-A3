@@ -38,8 +38,19 @@ No parameter:
 ``` 
 
 #### GET /availability/ 
-- takes pavilion name as parameter
-- returns the number of tickets left to purchase
+
+Request the number of tickets are remaining for a specific pavilion.
+
+##### Parameters
+- parameter 'pavilion_name' which the user interests with
+
+##### Resources
+``` json
+{
+    "tickect left": "10"
+}
+
+```
 
 #### GET info/
 Request the generic information about this year's Folklorama.
@@ -72,8 +83,14 @@ Fetch the current list of the top 10 most popular pavilions for this year's Folk
     "pavilions": [
         "name1",
         "name2",
-	// ...
-	"name10"
+        "name3",
+        "name4",
+        "name5",
+        "name6",
+        "name7",
+        "name8",
+        "name9",
+        "name10"
     ]
 }
 ```
