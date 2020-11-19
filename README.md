@@ -15,7 +15,7 @@ Request the list of all pavilions which are open this year or the information fo
 
 ##### Resources
 No parameter: 
-```
+```json
 {
     "pavilions": [
         "name1",
@@ -24,7 +24,7 @@ No parameter:
 }
 ```
 `name` parameter:
-```
+```json
 {
     "startDate": "2021-07-31",
     "endDate": "2021-08-12",
