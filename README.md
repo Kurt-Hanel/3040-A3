@@ -27,19 +27,27 @@
 
 ### Request
 
+GET availability [African Pavilion]
+
 ### Response
 
 {
     "page": 1,
     "per_page": 6,
-    "total": 12,
-    "total_pages": 2,
-    "data": [
+    [
         {
             "id": 1,
             "name": "Africa Pavilion",
             "year": 2019,
             "Location": "Located off St. Mary’s Rd, turn on to Enfield Cr",
+            "ticket left": 30,
+            
             
         }
+        ],
+        "support": {
+        "url": "https://https://folklorama.tixit.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC6C4B01-CDD6-41A5-B788-3FA4958624F5",
+        "text": "Check the url for more info."
+    }
+}
         
