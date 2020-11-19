@@ -56,7 +56,8 @@ GET/availability/African
 
 ### Response
 
-```{
+```
+{
    { "page": 1,
     "per_page": 6,
     [
@@ -73,5 +74,6 @@ GET/availability/African
         "text": "Check the url for more info."
     }}
     }
-}```
+}
+```
         
