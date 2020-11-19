@@ -42,7 +42,7 @@ No parameter:
 Request the number of tickets are remaining for a specific pavilion.
 
 ##### Parameters
-- parameter 'pavilion_name' which the user interests with
+- parameter `pavilion_name` which the user interests with
 
 ##### Resources
 ``` json
