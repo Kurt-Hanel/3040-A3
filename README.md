@@ -42,8 +42,21 @@ No parameter:
 - returns the number of tickets left to purchase
 
 #### GET info/
-- returns general info for folklorama
-- start date, end date, number of pavilions
+Request the generic information about this year's Folklorama.
+
+##### Parameters
+- none
+
+##### Resources
+```json
+{
+    "startDate": "2021-07-31",
+    "endDate": "2021-08-12",
+    "numberOfPavilions": 43,
+    "phoneNumber": "204-982-6210",
+    "email": "info@folklorama.ca"
+}
+```
 
 #### GET popular
 - lists the 10 most popular pavilions for the current festival based on number of tickets sold
