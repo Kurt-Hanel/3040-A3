@@ -15,7 +15,7 @@ Request the list of all pavilions which are open this year or the information fo
 
 ##### Resources
 No parameter: 
-```
+```json
 {
     "pavilions": [
         "name1",
@@ -24,7 +24,7 @@ No parameter:
 }
 ```
 `name` parameter:
-```
+```json
 {
     "startDate": "2021-07-31",
     "endDate": "2021-08-12",
@@ -41,9 +41,22 @@ No parameter:
 - takes pavilion name as parameter
 - returns the number of tickets left to purchase
 
-#### GET /info/
-- returns general info for folklorama
-- start date, end date, number of pavilions
+#### GET info/
+Request the generic information about this year's Folklorama.
+
+##### Parameters
+- none
+
+##### Resources
+```json
+{
+    "startDate": "2021-07-31",
+    "endDate": "2021-08-12",
+    "numberOfPavilions": 43,
+    "phoneNumber": "204-982-6210",
+    "email": "info@folklorama.ca"
+}
+```
 
 #### GET /popular/
 Fetch the current list of the top 10 most popular pavilions for this year's Folklorama.
@@ -69,12 +82,13 @@ Fetch the current list of the top 10 most popular pavilions for this year's Folk
 
 ### Request
 
-GET availability [African Pavilion]
+GET/availability/African
 
 ### Response
 
-{
-    "page": 1,
+```
+
+   { "page": 1,
     "per_page": 6,
     [
         {
@@ -82,14 +96,14 @@ GET availability [African Pavilion]
             "name": "Africa Pavilion",
             "year": 2019,
             "Location": "Located off St. Mary’s Rd, turn on to Enfield Cr",
-            "ticket left": 30,
-            
-            
-        }
+            "ticket left": 30
+            }
         ],
         "support": {
         "url": "https://https://folklorama.tixit.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC6C4B01-CDD6-41A5-B788-3FA4958624F5",
         "text": "Check the url for more info."
     }
-}
+    }
+
+```
         
