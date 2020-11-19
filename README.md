@@ -57,7 +57,7 @@ GET/availability/African
 ### Response
 
 ```
-{
+
    { "page": 1,
     "per_page": 6,
     [
@@ -72,8 +72,8 @@ GET/availability/African
         "support": {
         "url": "https://https://folklorama.tixit.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC6C4B01-CDD6-41A5-B788-3FA4958624F5",
         "text": "Check the url for more info."
-    }}
     }
-}
+    }
+
 ```
         
