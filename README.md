@@ -6,7 +6,7 @@
 
 #### GET pavilions/
 - No parameter: gets all pavilions 
-- If parameter `name` is present: return details of specific pavilion 
+- If parameter `name` is present: return details of specific pavilion (dates, times, location)
 
 ##### Parameters
 
