@@ -53,7 +53,6 @@ Request the number of tickets are remaining for a specific pavilion.
     "Location": "pavilion_Location"
     "tickect left": "10"
 }
-
 ```
 
 #### GET info/
