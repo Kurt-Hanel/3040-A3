@@ -72,8 +72,14 @@ Fetch the current list of the top 10 most popular pavilions for this year's Folk
     "pavilions": [
         "name1",
         "name2",
-	// ...
-	"name10"
+        "name3",
+        "name4",
+        "name5",
+        "name6",
+        "name7",
+        "name8",
+        "name9",
+        "name10"
     ]
 }
 ```
