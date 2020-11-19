@@ -28,3 +28,18 @@
 ### Request
 
 ### Response
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "name": "Africa Pavilion",
+            "year": 2019,
+            "Location": "Located off St. Mary’s Rd, turn on to Enfield Cr",
+            
+        }
+        
