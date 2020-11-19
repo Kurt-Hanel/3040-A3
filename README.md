@@ -1,5 +1,13 @@
-# 3040-A3
-Tech Comm A3 - Group 8
+# Folklorma API 
 
+## Description 
 
-# TEST1
+## Endpoints and Parameters
+
+## Resources 
+
+## Examples
+
+### Request
+
+### Response
