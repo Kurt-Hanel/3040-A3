@@ -7,12 +7,35 @@ This API provides access to essential information for the current year's Folklor
 ## Endpoints 
 
 #### GET pavilions/
-- No parameter: gets all pavilions 
-- If parameter `name` is present: return details of specific pavilion (dates, times, location)
+Request the list of all pavilions which are open this year or the information for a specific one.  
 
 ##### Parameters
+- no parameter, or
+- parameter `name` where it is the name as given in the list of all pavilions
 
 ##### Resources
+No parameter: 
+```
+{
+    "pavilions": [
+        "name1",
+        "name2"
+    ]
+}
+```
+`name` parameter:
+```
+{
+    "startDate": "2021-07-31",
+    "endDate": "2021-08-12",
+    "times": [
+        "6:00",
+        "7:30",
+        "9:00"
+    ],
+    "location": "21 Jump Street"
+}
+``` 
 
 #### GET availability/ 
 - takes pavilion name as parameter
