@@ -8,7 +8,7 @@ This API provides access to essential information for the current year's Folklor
 
 #### GET pavilions/
 - No parameter: gets all pavilions 
-- If parameter `name` is present: return details of specific pavilion 
+- If parameter `name` is present: return details of specific pavilion (dates, times, location)
 
 ##### Parameters
 
@@ -30,3 +30,18 @@ This API provides access to essential information for the current year's Folklor
 ### Request
 
 ### Response
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "name": "Africa Pavilion",
+            "year": 2019,
+            "Location": "Located off St. Mary’s Rd, turn on to Enfield Cr",
+            
+        }
+        
