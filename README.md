@@ -10,8 +10,8 @@ This API provides access to essential information for the current year's Folklor
 Request the list of all pavilions which are open this year or the information for a specific one.  
 
 ##### Parameters
-- no parameter, or
-- parameter `name` where it is the name as given in the list of all pavilions
+- none, or
+- parameter `name` which is the name as given in the list of all pavilions
 
 ##### Resources
 No parameter: 
@@ -42,7 +42,7 @@ No parameter:
 Request the number of tickets are remaining for a specific pavilion.
 
 ##### Parameters
-- parameter `pavilion_name` which the user interests with
+- parameter `name` which is the name of the pavilion of interest
 
 ##### Resources
 ``` json
@@ -55,7 +55,7 @@ Request the number of tickets are remaining for a specific pavilion.
 }
 ```
 
-#### GET info/
+#### GET /info/
 Request the generic information about this year's Folklorama.
 
 ##### Parameters
@@ -75,9 +75,8 @@ Request the generic information about this year's Folklorama.
 #### GET /popular/
 Fetch the current list of the top 10 most popular pavilions for this year's Folklorama.
 
-##### Paramaters
-
-- no parameters
+##### Parameters
+- none
 
 ##### Resources
 
@@ -102,28 +101,18 @@ Fetch the current list of the top 10 most popular pavilions for this year's Folk
 
 ### Request
 
-GET/availability/African
+GET/availability?name=Africa
 
 ### Response
 
-```
-
-   { "page": 1,
-    "per_page": 6,
-    [
-        {
-            "id": "1",
-            "name": "Africa Pavilion",
-            "year": 2019,
-            "Location": "Located off St. Mary’s Rd, turn on to Enfield Cr",
-            "ticket left": 30
-            }
-        ],
-        "support": {
-        "url": "https://https://folklorama.tixit.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC6C4B01-CDD6-41A5-B788-3FA4958624F5",
-        "text": "Check the url for more info."
-    }
-    }
-
+```json
+{
+    "id": "1",
+    "name": "Africa",
+    "fullName": "Africa Pavilion",
+    "location": "194 Enfield Crescent",
+    "availableTickets": 30,
+    "url": "https://https://folklorama.tixit.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC6C4B01-CDD6-41A5-B788-3FA4958624F5"
+}
 ```
         
