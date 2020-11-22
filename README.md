@@ -1,4 +1,4 @@
-# Folklorma API 
+# Folklorama API 
 
 ## Description 
 
@@ -101,7 +101,7 @@ Fetch the current list of the top 10 most popular pavilions for this year's Folk
 
 ### Request
 
-GET/availability?name=Africa
+GET /availability?name=Africa
 
 ### Response
 
