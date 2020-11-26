@@ -6,13 +6,15 @@ This API provides access to essential information for the current year's Folklor
 
 ## Endpoints 
 
-#### GET /pavilions/
+#### GET /pavilions/{name}
 Request the list of all pavilions which are open this year or the information for a specific one.  
 
 ##### Parameters
 - none, or
-- parameter `name` which is the name as given in the list of all pavilions
-- parameter `popular` which is a boolean indicating if we should only return the 10 most popular pavilions
+- an optional path parameter `name` which is the name as given in the list of all pavilions
+- an optional header parameter `popular` which is a boolean indicating if we should only return the 10 most popular pavilions
+
+Note: if `name` is specified and `popular=true`, the popular flag is ignored in favour of returning the specified pavilion resource.
 
 #### GET /info/
 Request the generic information about this year's Folklorama.
@@ -74,22 +76,22 @@ Request the generic information about this year's Folklorama.
 
 ### Request
 
-GET /pavilions?name=Africa
+GET /pavilions/Africa
 
 ### Response
 
 ```json
 {
-    "name": "Africa",
-    "location": "194 Enfield Crescent",
+    "name": "Africe",
+    "location": "21 Wall Street",
     "times": [
-        "6:00",
-        "7:30",
-        "9:00"
+        "3:00",
+        "8:30",
+        "10:00"
     ],
-    "ticketsRemaining": 30,
-    "startDate": "2021-08-7",
-    "endDate": "2021-08-13"
+    "ticketsRemaining": 50,
+    "startDate": "2021-07-31",
+    "endDate": "2021-08-6"
 }
 ```
 ## Group 8
