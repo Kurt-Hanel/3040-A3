@@ -10,7 +10,7 @@ This API provides access to essential information for the current year's Folklor
 Request the list of all pavilions which are open this year or the information for a specific one.  
 
 ##### Parameters
-- none, or
+- none, which will return all pavilions for this year
 - an optional path parameter `name` which is the name as given in the list of all pavilions
 - an optional header parameter `popular` which is a boolean indicating if we should only return the 10 most popular pavilions
 
