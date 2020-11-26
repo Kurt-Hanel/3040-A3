@@ -14,20 +14,11 @@ Request the list of all pavilions which are open this year or the information fo
 - parameter `name` which is the name as given in the list of all pavilions
 - parameter `popular` which is a boolean indicating if we should only return the 10 most popular pavilions
 
-#### GET /availability/
-
-Request the number of tickets are remaining for a specific pavilion.
-
-##### Parameters
-- parameter `name` which is the name of the pavilion of interest
-
 #### GET /info/
 Request the generic information about this year's Folklorama.
 
 ##### Parameters
 - none
-
-## Resources
 
 ### Festival
 ```json
@@ -50,11 +41,34 @@ Request the generic information about this year's Folklorama.
         "7:30",
         "9:00"
     ],
-    "availableTickets": 99,
+    "ticketsRemaining": 99,
     "startDate": "2021-07-31",
     "endDate": "2021-08-6"
 }
 ``` 
+
+### Pavilions 
+
+
+```json
+{
+    "pavilions": [
+        {
+            "name": "Scotland",
+            "location": "22 Jump Street",
+            "times": [
+                "6:00",
+                "7:30",
+                "9:00"
+            ],
+            "ticketsRemaining": 100,
+            "startDate": "2021-07-31",
+            "endDate": "2021-08-12"
+        }
+    ]
+}
+```
+
 
 ## Examples
 
@@ -73,7 +87,7 @@ GET /availability?name=Africa
         "7:30",
         "9:00"
     ],
-    "availableTickets": 30,
+    "ticketsRemaining": 30,
     "startDate": "2021-08-7",
     "endDate": "2021-08-13"
 }
