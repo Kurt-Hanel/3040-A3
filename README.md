@@ -95,7 +95,7 @@ GET /availability?name=Africa
 ## Group 8
 
 ### Nabeel Saeed
-### Kurt Hannel
+### Kurt Hanel
 ### Matt Cameron
 ### Ronghan Wang
         
