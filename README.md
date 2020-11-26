@@ -69,7 +69,7 @@ Request the generic information about this year's Folklorama.
         "7:30",
         "9:00"
     ],
-    "location": "21 Jump Street"
+    "location": "22 Jump Street"
 }
 ``` 
 
