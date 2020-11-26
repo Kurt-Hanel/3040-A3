@@ -11,7 +11,7 @@ Request the list of all pavilions which are open this year or the information fo
 
 ##### Parameters
 - none, which will return all pavilions for this year
-- an optional path parameter `name` which is the name as given in the list of all pavilions
+- an optional path parameter `name` which specifies a single pavilion
 - an optional header parameter `popular` which is a boolean indicating if we should only return the 10 most popular pavilions
 
 Note: if `name` is specified and `popular=true`, the popular flag is ignored in favour of returning the specified pavilion resource.
