@@ -20,9 +20,6 @@ Request the generic information about this year's Folklorama.
 ##### Parameters
 - none
 
-
-## Resources
-
 ### Festival
 ```json
 {
@@ -37,15 +34,16 @@ Request the generic information about this year's Folklorama.
 ### Pavilion
 ```json
 {
-    "startDate": "2021-07-31",
-    "endDate": "2021-08-12",
+    "name": "Scandinavia",
+    "location": "22 Jump Street",
     "times": [
         "6:00",
         "7:30",
         "9:00"
     ],
-    "location": "21 Jump Street",
-    "ticketsRemaining": 100,
+    "ticketsRemaining": 99,
+    "startDate": "2021-07-31",
+    "endDate": "2021-08-6"
 }
 ``` 
 
@@ -56,15 +54,16 @@ Request the generic information about this year's Folklorama.
 {
     "pavilions": [
         {
-            "startDate": "2021-07-31",
-            "endDate": "2021-08-12",
+            "name": "Scotland",
+            "location": "22 Jump Street",
             "times": [
                 "6:00",
                 "7:30",
                 "9:00"
             ],
-            "location": "22 Jump Street",
             "ticketsRemaining": 100,
+            "startDate": "2021-07-31",
+            "endDate": "2021-08-12"
         }
     ]
 }
@@ -81,12 +80,16 @@ GET /availability?name=Africa
 
 ```json
 {
-    "id": "1",
     "name": "Africa",
-    "fullName": "Africa Pavilion",
     "location": "194 Enfield Crescent",
-    "ticetsRemaining": 30,
-    "url": "https://https://folklorama.tixit.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DC6C4B01-CDD6-41A5-B788-3FA4958624F5"
+    "times": [
+        "6:00",
+        "7:30",
+        "9:00"
+    ],
+    "ticketsRemaining": 30,
+    "startDate": "2021-08-7",
+    "endDate": "2021-08-13"
 }
 ```
 ## Group 8
