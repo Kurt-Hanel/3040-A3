@@ -74,7 +74,7 @@ Request the generic information about this year's Folklorama.
 
 ### Request
 
-GET /availability?name=Africa
+GET /pavilions?name=Africa
 
 ### Response
 
